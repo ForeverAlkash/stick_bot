@@ -27,9 +27,9 @@ else:
 
 client = TelegramClient('session', API_ID, API_HASH)
 
-@client.on(events.NewMessage(from_users='me', pattern=r'!спизжено'))
+@client.on(events.NewMessage(from_users='me', pattern=r'!стик'))
 async def handle_sticker_command(event):
-    """Обработчик команды !спизжено"""
+    """Обработчик команды !стик"""
     from handlers.sticker_control import add_sticker_to_set
     stickerset_name = STICKERSET_NAME
     stickerset_title = STICKERSET_TITLE
