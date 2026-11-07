@@ -1,0 +1,18 @@
+# Секреты — никогда не коммитить
+.env
+session.session
+session.session-journal
+*.session
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Docker-артефакты и файлы переноса
+*.tar.gz
+*.tar
+root@*
+
+# Системный мусор
+.DS_Store
